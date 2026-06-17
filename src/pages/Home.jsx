@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
+import Tour from '../components/Tour.jsx'
 import ProblemSection from '../components/ProblemSection.jsx'
 import Modules from '../components/Modules.jsx'
 import Benefits from '../components/Benefits.jsx'
@@ -12,6 +13,7 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Tour />
         <ProblemSection />
         <Modules />
         <Benefits />

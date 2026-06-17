@@ -59,7 +59,7 @@ function Hero() {
                 />
               </a>
               <a
-                href="#beneficios"
+                href="#tour"
                 className="inline-flex items-center justify-center rounded-xl border-2 border-brand-black bg-transparent px-6 py-3.5 text-base font-semibold text-brand-black transition-all hover:bg-brand-black hover:text-brand-lime"
               >
                 Conocer más

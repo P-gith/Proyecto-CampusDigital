@@ -160,6 +160,7 @@ export const news = [
 
 export const navLinks = [
   { label: 'Inicio', href: '#inicio' },
+  { label: 'Tour', href: '#tour' },
   { label: 'Módulos', href: '#modulos' },
   { label: 'Beneficios', href: '#beneficios' },
   { label: 'Noticias', href: '#noticias' },
