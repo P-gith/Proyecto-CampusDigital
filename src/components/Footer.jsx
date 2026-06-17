@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
   GraduationCap,
@@ -30,14 +31,14 @@ function Footer() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-4"
           >
-            <a href="#inicio" className="flex items-center gap-2.5">
+            <Link to="/" className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-lime">
                 <GraduationCap className="h-5 w-5 text-brand-black" aria-hidden="true" />
               </div>
               <span className="text-lg font-bold text-brand-white">
                 Campus<span className="text-brand-lime">Digital</span>
               </span>
-            </a>
+            </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-charcoal-300">
               Portal académico universitario que centraliza información, recursos
@@ -80,12 +81,12 @@ function Footer() {
                 <ul className="mt-4 space-y-2.5">
                   {group.links.map((link) => (
                     <li key={link.label}>
-                      <a
-                        href={link.href}
+                      <Link
+                        to={link.to}
                         className="text-sm text-charcoal-300 transition-colors hover:text-brand-lime"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

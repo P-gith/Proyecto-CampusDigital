@@ -62,3 +62,192 @@
     @apply mt-4 max-w-2xl text-lg text-charcoal-600;
   }
 }
+
+/* ── Accesibilidad: tamaño de texto ── */
+html.a11y-text-base {
+  font-size: 100%;
+}
+
+html.a11y-text-lg {
+  font-size: 112.5%;
+}
+
+html.a11y-text-xl {
+  font-size: 125%;
+}
+
+html.a11y-text-2xl {
+  font-size: 140%;
+}
+
+/* ── Accesibilidad: alto contraste ── */
+html.a11y-high-contrast {
+  color-scheme: dark;
+}
+
+html.a11y-high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.a11y-high-contrast main,
+html.a11y-high-contrast header,
+html.a11y-high-contrast footer,
+html.a11y-high-contrast section,
+html.a11y-high-contrast nav,
+html.a11y-high-contrast article {
+  background-color: #000000 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+html.a11y-high-contrast h1,
+html.a11y-high-contrast h2,
+html.a11y-high-contrast h3,
+html.a11y-high-contrast h4,
+html.a11y-high-contrast p,
+html.a11y-high-contrast li,
+html.a11y-high-contrast span,
+html.a11y-high-contrast time {
+  color: #ffffff !important;
+}
+
+html.a11y-high-contrast .a11y-widget h2,
+html.a11y-high-contrast .a11y-widget span,
+html.a11y-high-contrast .a11y-widget p {
+  color: #000000 !important;
+}
+
+html.a11y-high-contrast a {
+  color: #ffff00 !important;
+  text-decoration: underline !important;
+}
+
+html.a11y-high-contrast button {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffffff !important;
+}
+
+html.a11y-high-contrast .a11y-widget button {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: none !important;
+}
+
+html.a11y-high-contrast img {
+  filter: grayscale(1) contrast(1.2);
+}
+
+html.a11y-high-contrast .text-brand-lime,
+html.a11y-high-contrast [class*="text-primary"],
+html.a11y-high-contrast [class*="text-brand-lime"] {
+  color: #ffff00 !important;
+}
+
+html.a11y-high-contrast [class*="bg-brand-lime"],
+html.a11y-high-contrast [class*="bg-primary"] {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+html.a11y-high-contrast [class*="shadow"] {
+  box-shadow: none !important;
+}
+
+html.a11y-high-contrast .a11y-widget [class*="shadow"] {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* ── Widget de accesibilidad: estilos aislados ── */
+.a11y-switch {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.a11y-switch-track {
+  display: block;
+  position: relative;
+  width: 2.75rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #bdbdbd;
+  transition: background-color 0.2s ease;
+}
+
+.a11y-switch-track[data-on='true'] {
+  background-color: #97bf04;
+}
+
+.a11y-switch-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.a11y-switch-track[data-on='true'] .a11y-switch-thumb {
+  transform: translateX(1.25rem);
+}
+
+/* Widget legible en modo alto contraste */
+html.a11y-high-contrast .a11y-widget [role='dialog'] {
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  color: #000000 !important;
+}
+
+html.a11y-high-contrast .a11y-widget .a11y-contrast-row {
+  background-color: #f2fbeb !important;
+  border-color: #000000 !important;
+}
+
+html.a11y-high-contrast .a11y-widget button {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: none !important;
+}
+
+html.a11y-high-contrast .a11y-widget button[class*='bg-brand-mint'],
+html.a11y-high-contrast .a11y-widget button[class*='border-black'] {
+  background-color: #f2fbeb !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+html.a11y-high-contrast .a11y-switch-track {
+  background-color: #616161 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html.a11y-high-contrast .a11y-switch-track[data-on='true'] {
+  background-color: #000000 !important;
+  border: 2px solid #ffff00 !important;
+  box-sizing: border-box;
+}
+
+html.a11y-high-contrast .a11y-switch-thumb {
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+html.a11y-high-contrast .a11y-widget [class*='text-primary'] {
+  color: #5c7302 !important;
+}
+
+html.a11y-high-contrast .a11y-widget > button {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}

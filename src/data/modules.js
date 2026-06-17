@@ -159,31 +159,32 @@ export const news = [
 ]
 
 export const navLinks = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Tour', href: '#tour' },
-  { label: 'Módulos', href: '#modulos' },
-  { label: 'Beneficios', href: '#beneficios' },
-  { label: 'Noticias', href: '#noticias' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'Inicio', to: '/#inicio' },
+  { label: 'Tour', to: '/#tour' },
+  { label: 'Módulos', to: '/#modulos' },
+  { label: 'Beneficios', to: '/#beneficios' },
+  { label: 'Noticias', to: '/#noticias' },
+  { label: 'Contacto', to: '/#contacto' },
+  { label: 'Quiénes Somos', to: '/quienes-somos' },
 ]
 
 export const footerLinks = {
   institucional: [
-    { label: 'Sobre nosotros', href: '#' },
-    { label: 'Misión y visión', href: '#' },
-    { label: 'Políticas', href: '#' },
-    { label: 'Transparencia', href: '#' },
+    { label: 'Sobre nosotros', to: '/quienes-somos' },
+    { label: 'Misión y visión', to: '/quienes-somos' },
+    { label: 'Políticas', to: '#' },
+    { label: 'Transparencia', to: '#' },
   ],
   recursos: [
-    { label: 'Videoteca', href: '#modulos' },
-    { label: 'Biblioteca', href: '#modulos' },
-    { label: 'Trámites', href: '#modulos' },
-    { label: 'Calendario', href: '#noticias' },
+    { label: 'Videoteca', to: '/#modulos' },
+    { label: 'Biblioteca', to: '/#modulos' },
+    { label: 'Trámites', to: '/#modulos' },
+    { label: 'Calendario', to: '/#noticias' },
   ],
   soporte: [
-    { label: 'Centro de ayuda', href: '#' },
-    { label: 'Preguntas frecuentes', href: '#' },
-    { label: 'Contacto', href: '#contacto' },
-    { label: 'Accesibilidad', href: '#' },
+    { label: 'Centro de ayuda', to: '#' },
+    { label: 'Preguntas frecuentes', to: '#' },
+    { label: 'Contacto', to: '/#contacto' },
+    { label: 'Accesibilidad', to: '#' },
   ],
 }
