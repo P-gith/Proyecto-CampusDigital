@@ -29,7 +29,7 @@ function ProblemSection() {
   return (
     <section
       id="problema"
-      className="bg-slate-50 py-20 lg:py-28"
+      className="bg-brand-mint py-20 lg:py-28"
       aria-labelledby="problem-title"
     >
       <div className="section-container">
@@ -40,7 +40,7 @@ function ProblemSection() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">
+          <span className="text-sm font-semibold uppercase tracking-wider text-primary-700">
             El desafío
           </span>
           <h2 id="problem-title" className="section-title mt-3">
@@ -67,15 +67,15 @@ function ProblemSection() {
                 key={card.id}
                 variants={cardVariants}
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                className="group rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg hover:shadow-slate-200/60"
+                className="group rounded-2xl border border-black/8 bg-brand-white p-8 shadow-sm transition-shadow hover:shadow-lg hover:shadow-black/5"
               >
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white">
+                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-mint text-primary-700 transition-colors group-hover:bg-brand-black group-hover:text-brand-lime">
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900">
+                <h3 className="text-xl font-semibold text-brand-black">
                   {card.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-slate-600">
+                <p className="mt-3 leading-relaxed text-charcoal-600">
                   {card.description}
                 </p>
               </motion.article>

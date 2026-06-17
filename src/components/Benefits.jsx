@@ -30,12 +30,12 @@ function Benefits() {
   return (
     <section
       id="beneficios"
-      className="relative overflow-hidden bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 py-20 lg:py-28"
+      className="relative overflow-hidden bg-brand-black py-20 lg:py-28"
       aria-labelledby="benefits-title"
     >
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-primary-500/10 blur-3xl" />
-        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-accent-500/10 blur-3xl" />
+        <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-brand-lime/10 blur-3xl" />
+        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-brand-lime/5 blur-3xl" />
       </div>
 
       <div className="section-container relative">
@@ -46,16 +46,16 @@ function Benefits() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-300">
+          <span className="text-sm font-semibold uppercase tracking-wider text-brand-lime">
             Beneficios
           </span>
           <h2
             id="benefits-title"
-            className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-brand-white sm:text-4xl"
           >
             Gobierno electrónico al servicio del estudiante
           </h2>
-          <p className="mt-4 text-lg text-primary-100/80">
+          <p className="mt-4 text-lg text-charcoal-200">
             Eficiencia, transparencia y orientación al estudiante en cada
             interacción digital.
           </p>
@@ -75,15 +75,15 @@ function Benefits() {
                 key={benefit.id}
                 variants={cardVariants}
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-colors hover:border-white/20 hover:bg-white/10"
+                className="group rounded-2xl border border-white/10 bg-charcoal-800/50 p-8 backdrop-blur-sm transition-colors hover:border-brand-lime/30 hover:bg-charcoal-700/50"
               >
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-500/20 text-primary-300 transition-colors group-hover:bg-primary-500 group-hover:text-white">
+                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-lime/15 text-brand-lime transition-colors group-hover:bg-brand-lime group-hover:text-brand-black">
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-brand-white">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-primary-100/70">
+                <p className="mt-3 leading-relaxed text-charcoal-200">
                   {benefit.description}
                 </p>
               </motion.article>

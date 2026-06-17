@@ -14,9 +14,9 @@ export const modules = [
     description:
       'Tutoriales paso a paso, grabaciones de clases y contenido de inducción.',
     icon: Video,
-    color: 'from-blue-500 to-blue-700',
-    bgLight: 'bg-blue-50',
-    iconColor: 'text-blue-600',
+    color: 'from-primary-400 to-primary-600',
+    bgLight: 'bg-primary-50',
+    iconColor: 'text-primary-700',
   },
   {
     id: 2,
@@ -24,9 +24,9 @@ export const modules = [
     description:
       'Reglamentos, requisitos, procesos académicos y administrativos descargables.',
     icon: BookOpen,
-    color: 'from-indigo-500 to-indigo-700',
-    bgLight: 'bg-indigo-50',
-    iconColor: 'text-indigo-600',
+    color: 'from-charcoal-500 to-charcoal-700',
+    bgLight: 'bg-charcoal-50',
+    iconColor: 'text-charcoal-700',
   },
   {
     id: 3,
@@ -34,9 +34,9 @@ export const modules = [
     description:
       'Materiales, tareas y actividades complementarias por materia.',
     icon: GraduationCap,
-    color: 'from-sky-500 to-sky-700',
-    bgLight: 'bg-sky-50',
-    iconColor: 'text-sky-600',
+    color: 'from-primary-500 to-primary-700',
+    bgLight: 'bg-primary-100',
+    iconColor: 'text-primary-800',
   },
   {
     id: 4,
@@ -44,9 +44,9 @@ export const modules = [
     description:
       'Libros digitales, artículos científicos, tesis y repositorio académico.',
     icon: Library,
-    color: 'from-cyan-500 to-cyan-700',
-    bgLight: 'bg-cyan-50',
-    iconColor: 'text-cyan-600',
+    color: 'from-primary-300 to-primary-500',
+    bgLight: 'bg-brand-mint',
+    iconColor: 'text-primary-600',
   },
   {
     id: 5,
@@ -54,9 +54,9 @@ export const modules = [
     description:
       'Solicitud de certificados, matrículas y procesos administrativos online.',
     icon: FileText,
-    color: 'from-primary-500 to-primary-700',
-    bgLight: 'bg-primary-50',
-    iconColor: 'text-primary-600',
+    color: 'from-charcoal-600 to-charcoal-800',
+    bgLight: 'bg-charcoal-50',
+    iconColor: 'text-charcoal-700',
   },
   {
     id: 6,
@@ -64,9 +64,9 @@ export const modules = [
     description:
       'Calendario académico, eventos y comunicados institucionales.',
     icon: Calendar,
-    color: 'from-violet-500 to-violet-700',
-    bgLight: 'bg-violet-50',
-    iconColor: 'text-violet-600',
+    color: 'from-primary-600 to-primary-800',
+    bgLight: 'bg-primary-50',
+    iconColor: 'text-primary-700',
   },
 ]
 

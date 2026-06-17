@@ -34,7 +34,7 @@ function Modules() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">
+          <span className="text-sm font-semibold uppercase tracking-wider text-primary-700">
             Módulos principales
           </span>
           <h2 id="modules-title" className="section-title mt-3">
@@ -60,7 +60,7 @@ function Modules() {
                 key={module.id}
                 variants={cardVariants}
                 whileHover={{ y: -8, transition: { duration: 0.25 } }}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-primary-200 hover:shadow-xl hover:shadow-primary-100/50"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-black/8 bg-brand-white p-8 shadow-sm transition-all hover:border-primary-500/40 hover:shadow-xl hover:shadow-primary-500/10"
               >
                 <div
                   className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl ${module.bgLight} ${module.iconColor} transition-transform group-hover:scale-110`}
@@ -68,16 +68,16 @@ function Modules() {
                   <Icon className="h-7 w-7" aria-hidden="true" />
                 </div>
 
-                <h3 className="text-xl font-semibold text-slate-900">
+                <h3 className="text-xl font-semibold text-brand-black">
                   {module.title}
                 </h3>
-                <p className="mt-3 flex-1 leading-relaxed text-slate-600">
+                <p className="mt-3 flex-1 leading-relaxed text-charcoal-600">
                   {module.description}
                 </p>
 
                 <button
                   type="button"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors group-hover:text-primary-700"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-black transition-colors group-hover:text-primary-700"
                   aria-label={`Ver más sobre ${module.title}`}
                 >
                   Ver más

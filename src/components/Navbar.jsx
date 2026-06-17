@@ -26,7 +26,7 @@ function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 shadow-md shadow-slate-200/50 backdrop-blur-lg'
+          ? 'bg-brand-white/95 shadow-md shadow-black/5 backdrop-blur-lg'
           : 'bg-transparent'
       }`}
     >
@@ -39,15 +39,15 @@ function Navbar() {
           className="group flex items-center gap-2.5"
           aria-label="CampusDigital - Inicio"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 shadow-lg shadow-primary-600/25 transition-transform group-hover:scale-105">
-            <GraduationCap className="h-5 w-5 text-white" aria-hidden="true" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-black shadow-lg transition-transform group-hover:scale-105">
+            <GraduationCap className="h-5 w-5 text-brand-lime" aria-hidden="true" />
           </div>
           <span
             className={`text-lg font-bold tracking-tight transition-colors ${
-              scrolled ? 'text-slate-900' : 'text-white'
+              scrolled ? 'text-brand-black' : 'text-brand-black'
             }`}
           >
-            Campus<span className="text-primary-400">Digital</span>
+            Campus<span className="text-primary-700">Digital</span>
           </span>
         </a>
 
@@ -56,10 +56,10 @@ function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 ${
+                className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                   scrolled
-                    ? 'text-slate-600 hover:bg-primary-50 hover:text-primary-700'
-                    : 'text-white/90 hover:text-white'
+                    ? 'text-charcoal-700 hover:bg-brand-mint hover:text-brand-black'
+                    : 'text-brand-black/80 hover:bg-black/5 hover:text-brand-black'
                 }`}
               >
                 {link.label}
@@ -71,7 +71,9 @@ function Navbar() {
         <button
           type="button"
           className={`inline-flex items-center justify-center rounded-lg p-2 lg:hidden ${
-            scrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'
+            scrolled
+              ? 'text-charcoal-700 hover:bg-brand-mint'
+              : 'text-brand-black hover:bg-black/5'
           }`}
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
@@ -90,7 +92,7 @@ function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-slate-200/20 bg-white/95 backdrop-blur-lg lg:hidden"
+            className="overflow-hidden border-t border-black/10 bg-brand-white/95 backdrop-blur-lg lg:hidden"
           >
             <ul className="section-container space-y-1 py-4">
               {navLinks.map((link, index) => (
@@ -103,7 +105,7 @@ function Navbar() {
                   <a
                     href={link.href}
                     onClick={handleLinkClick}
-                    className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-primary-50 hover:text-primary-700"
+                    className="block rounded-lg px-4 py-3 text-base font-medium text-charcoal-700 transition-colors hover:bg-brand-mint hover:text-brand-black"
                   >
                     {link.label}
                   </a>

@@ -23,7 +23,7 @@ function News() {
   return (
     <section
       id="noticias"
-      className="bg-slate-50 py-20 lg:py-28"
+      className="bg-brand-mint py-20 lg:py-28"
       aria-labelledby="news-title"
     >
       <div className="section-container">
@@ -34,7 +34,7 @@ function News() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">
+          <span className="text-sm font-semibold uppercase tracking-wider text-primary-700">
             Noticias
           </span>
           <h2 id="news-title" className="section-title mt-3">
@@ -58,7 +58,7 @@ function News() {
               key={item.id}
               variants={cardVariants}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-shadow hover:shadow-xl hover:shadow-slate-200/60"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-black/8 bg-brand-white shadow-sm transition-shadow hover:shadow-xl hover:shadow-black/8"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -67,27 +67,27 @@ function News() {
                   className="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <span className="absolute left-4 top-4 rounded-full bg-primary-600 px-3 py-1 text-xs font-semibold text-white">
+                <span className="absolute left-4 top-4 rounded-full bg-brand-black px-3 py-1 text-xs font-semibold text-brand-lime">
                   {item.category}
                 </span>
               </div>
 
               <div className="flex flex-1 flex-col p-6">
-                <div className="mb-3 flex items-center gap-2 text-sm text-slate-500">
+                <div className="mb-3 flex items-center gap-2 text-sm text-charcoal-500">
                   <Calendar className="h-4 w-4" aria-hidden="true" />
                   <time dateTime={item.date}>{item.date}</time>
                 </div>
 
-                <h3 className="text-lg font-semibold text-slate-900 transition-colors group-hover:text-primary-700">
+                <h3 className="text-lg font-semibold text-brand-black transition-colors group-hover:text-primary-700">
                   {item.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal-600">
                   {item.description}
                 </p>
 
                 <button
                   type="button"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-black transition-colors hover:text-primary-700"
                   aria-label={`Leer más sobre ${item.title}`}
                 >
                   Leer más
