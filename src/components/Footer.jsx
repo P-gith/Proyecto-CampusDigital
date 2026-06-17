@@ -11,6 +11,7 @@ import {
   Phone,
 } from 'lucide-react'
 import { footerLinks } from '../data/modules.js'
+import { contactInfo } from '../data/contact.js'
 
 function Footer() {
   const socialLinks = [
@@ -46,19 +47,59 @@ function Footer() {
               con la eficiencia, transparencia y excelencia educativa.
             </p>
 
-            <div className="mt-6 space-y-3 text-sm">
-              <p className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
-                Av. Universitaria 1234, Ciudad Académica
-              </p>
-              <p className="flex items-center gap-2">
-                <Phone className="h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
-                +51 (01) 555-0100
-              </p>
-              <p className="flex items-center gap-2">
-                <Mail className="h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
-                contacto@campusdigital.edu
-              </p>
+            <div className="mt-6 space-y-4 text-sm">
+              <div>
+                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-lime">
+                  Contacto institucional
+                </h3>
+                <p className="flex items-start gap-2 text-charcoal-300">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
+                  <span>{contactInfo.address}</span>
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-2 text-xs font-medium text-charcoal-400">
+                  Teléfonos institucionales
+                </p>
+                <ul className="space-y-1.5">
+                  {contactInfo.phones.map((phone) => (
+                    <li key={phone.href}>
+                      <a
+                        href={phone.href}
+                        className="flex items-center gap-2 text-charcoal-300 transition-colors hover:text-brand-lime"
+                      >
+                        <Phone className="h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
+                        {phone.value}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="mb-2 text-xs font-medium text-charcoal-400">
+                  Correos electrónicos
+                </p>
+                <ul className="space-y-2.5">
+                  {contactInfo.emails.map((email) => (
+                    <li key={email.href}>
+                      <a
+                        href={email.href}
+                        className="group block transition-colors hover:text-brand-lime"
+                      >
+                        <span className="flex items-center gap-2 text-charcoal-300 group-hover:text-brand-lime">
+                          <Mail className="h-4 w-4 shrink-0 text-brand-lime" aria-hidden="true" />
+                          <span className="break-all">{email.value}</span>
+                        </span>
+                        <span className="mt-0.5 block pl-6 text-xs text-charcoal-400 group-hover:text-brand-lime/80">
+                          {email.label}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </motion.div>
 
